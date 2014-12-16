@@ -6,23 +6,25 @@ endpoints:
     enabled: true
   shutdown:
     enabled: true
+  health:
+    sensitive: false
 
 zuul:
-  server:
-    route:
-      stores: /stores
-      customers: /customers
+  route:
+    stores: /stores/**
+    customers: /customers/**
 
+#remove when spring-boot 1.2.1 is out
+security:
+  basic:
+    enabled: false
 management:
-  port: 8766
+  security:
+    enabled:
+      false
 
 server:
-  # moves the Spring Dispatch Servlet to a path below `/`
-  servletPath: /app
   port: 8765
-# sets the error path to use the Dispatch Servlet to resolve the error view
-error:
-  path: ${server.servletPath}/error
 
 logging:
   level:
