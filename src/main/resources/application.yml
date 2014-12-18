@@ -10,7 +10,7 @@ endpoints:
     sensitive: false
 
 zuul:
-  route:
+  routes:
     stores: /stores/**
     customers: /customers/**
 
