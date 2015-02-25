@@ -14,15 +14,6 @@ zuul:
     stores: /stores/**
     customers: /customers/**
 
-#remove when spring-boot 1.2.1 is out
-security:
-  basic:
-    enabled: false
-management:
-  security:
-    enabled:
-      false
-
 server:
   port: 8765
 
