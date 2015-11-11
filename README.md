@@ -1,7 +1,7 @@
 # Zuul Server
 
 Run this app as a normal Spring Boot app. If you run from this project 
-it will be on port 8765 (per the `application.yml`). Also run the
+it will be on port 8765 (per the `application.yml`). Also run [eureka](https://github.com/spring-cloud-samples/eureka) and the
 [stores](https://github.com/spring-cloud-samples/customers-stores/tree/master/rest-microservices-store) 
 and [customers](https://github.com/spring-cloud-samples/customers-stores/tree/master/rest-microservices-customers) 
 samples from the [customer-stores](https://github.com/spring-cloud-samples/customers-stores) 
