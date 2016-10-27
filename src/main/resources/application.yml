@@ -13,6 +13,7 @@ zuul:
   routes:
     stores: /stores/**
     customers: /customers/**
+    zuulserver: /self/**
 
 server:
   port: 8765
