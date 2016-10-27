@@ -10,3 +10,7 @@ sample.
 You should then be able to view json content from 
 `http://localhost:8765/stores` and `http://localhost:8765/customers` which are
 configured in `application.yml` as proxy routes.
+
+## Hystrix Fallback Support
+This sample also includes an example of how to configure Hystrix fallbacks for routes in Zuul.
+If you hit `http://localhost:8765/self/timeout` you can see the fallback functionality in action.
